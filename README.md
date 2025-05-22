@@ -70,8 +70,8 @@ flask run
 สร้างผู้ใช้งานใหม่  
 ```json
 {
-  "name": "Alice",
-  "email": "alice@example.com",
+  "name": "Test",
+  "email": "test@example.com",
   "department": "IT"
 }
 ```
