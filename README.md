@@ -76,6 +76,9 @@ flask run
 }
 ```
 
+### GET /api/users/<users_id>   
+ดึงข้อมูลผู้ใช้ตาม id
+
 ### POST /api/rooms  
 สร้างห้องใหม่  
 ```json
