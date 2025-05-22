@@ -147,8 +147,10 @@ Mini-Project/
 │   ├── test_services.py
 │   ├── test_api.py
 │
+├── instance/
+│   ├── db.sqlite          # ไฟล์ฐานข้อมูล
+│
 ├── migrations/            # ไฟล์สำหรับ Flask-Migrate
-├── db.sqlite              # ไฟล์ฐานข้อมูล
 ├── run.py                 # จุดรันแอป
 ├── requirements.txt
 ├── .env
