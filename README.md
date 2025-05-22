@@ -112,7 +112,13 @@ flask run
 
 คุณสามารถรันการทดสอบได้ในโฟลเดอร์ `tests/`  
 ```bash
-pytest
+pytest tests/test_api.py  
+```
+```bash
+pytest tests/test_models.py  
+```
+```bash
+pytest tests/test_services.py  
 ```
 
 ---

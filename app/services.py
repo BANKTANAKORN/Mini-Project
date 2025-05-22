@@ -36,7 +36,7 @@ def create_booking(data):
     if start < now:
         raise ValueError("Cannot book room in the past")
 
-    # ✅ ตรวจสอบว่าผู้ใช้และห้องมีอยู่จริง
+    # ตรวจสอบว่าผู้ใช้และห้องมีอยู่จริง
     user = User.query.get(data['user_id'])
     if not user:
         raise ValueError(f"User ID {data['user_id']} not found")
@@ -45,7 +45,7 @@ def create_booking(data):
     if not room:
         raise ValueError(f"Room ID {data['room_id']} not found")
 
-    # ✅ ตรวจสอบการจองซ้อน
+    # ตรวจสอบการจองซ้อน
     overlapping = Booking.query.filter(
         Booking.room_id == data['room_id'],
         Booking.start_time < end,
@@ -84,4 +84,3 @@ def delete_booking(booking_id):
         raise ValueError("Booking not found")
     db.session.delete(booking)
     db.session.commit()
-
