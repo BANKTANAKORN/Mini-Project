@@ -1,7 +1,5 @@
 # Mini-Project: "ระบบจัดการผู้ใช้ + การจองห้องประชุม (User + Room Booking API)"
 
-ระบบจองห้องประชุมผ่าน REST API ที่พัฒนาโดยใช้ Python, Flask, SQLAlchemy และ SQLite
-
 ---
 
 ## ฟีเจอร์หลัก
